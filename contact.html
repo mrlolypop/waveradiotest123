@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact WAVE Radio — Requests, Shout-outs & Demos</title>
+<meta name="description" content="Send WAVE Radio a request, shout-out or demo, or just say hi from wherever you're tuning in.">
+<meta property="og:title" content="Contact WAVE Radio — Requests, Shout-outs & Demos">
+<meta property="og:description" content="Send WAVE Radio a request, shout-out or demo, or just say hi from wherever you're tuning in.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://waveradio.eu.org/contact.html">
+<meta property="og:url" content="https://waveradio.eu.org/contact.html">
+<meta property="og:site_name" content="WAVE Radio">
+<meta property="og:image" content="https://waveradio.eu.org/img/cover.png">
+<meta name="twitter:image" content="https://waveradio.eu.org/img/cover.png">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Space+Grotesk:wght@400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wave.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/wave-logo.png" alt="WAVE Radio"></a>
+    <nav class="nav">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="broadcast.html">SOUND</a>
+      <a href="contact.html" class="active">CONTACT</a>
+    </nav>
+    <span class="onair"><span class="dot" data-wave="live-dot"></span><span class="label" data-wave="live">TUNING…</span></span>
+  </div>
+</header>
+<main>
+
+<section class="hero">
+  <div class="wrap person" style="align-items:start">
+    <div>
+      <div class="mono">Contact</div>
+      <h1 class="display" style="font-size:clamp(2.4rem,7vw,5rem)">Let's<br><em>talk.</em></h1>
+      <p class="lead" style="margin-top:24px">Requests, shout-outs, demos, or just say hi from wherever you're tuning in.</p>
+      <p class="mono" style="margin-top:28px">Toronto, Canada · EST<br>Replies usually within a day or two.</p>
+    </div>
+    <form class="form card" data-contact-form>
+      <label for="name">Name</label><input id="name" name="name" required maxlength="100">
+      <label for="email">Email</label><input id="email" name="email" type="email" required maxlength="255">
+      <label for="message">Message</label><textarea id="message" name="message" rows="6" required maxlength="2000"></textarea>
+      <input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+      <button class="btn btn-primary" type="submit">Send message</button>
+      <p class="form-msg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <img src="img/wave-logo.png" alt="WAVE Radio">
+    <span class="mono">PURE VELOCITY · Independent since 1994 · Toronto, Canada</span>
+    <span class="mono">© <span id="yr">2026</span> WAVE Radio</span>
+  </div>
+</footer>
+<div class="player-bar" role="region" aria-label="WAVE Radio player">
+  <div class="wrap">
+    <button class="btn-play" data-player-toggle aria-label="Play WAVE Radio"></button>
+    <img class="thumb" data-wave="art" src="img/cover.png" alt="">
+    <div class="np">
+      <div class="t"><span data-wave="artist">WAVE Radio</span> — <span data-wave="title">PURE VELOCITY</span></div>
+      <div data-player-status class="status">Ready</div>
+    </div>
+    <input class="vol" type="range" min="0" max="1" step="0.01" data-player-volume aria-label="Volume">
+    <select class="src" data-player-source aria-label="Stream server"></select>
+  </div>
+</div>
+<script src="js/config.js"></script>
+<script src="js/metadata.js"></script>
+<script src="js/player.js"></script>
+<script src="js/history.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
